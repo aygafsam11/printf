@@ -1,30 +1,42 @@
-.TH man 3 "16th October 2022" "0.01" "_printf man page"
+.TH _PRINTF 1 "16th October 2022" "1" "_printf() Manual"
 .SH NAME
-.B _printf
-- A simple re-creation of the printf function
+_printf()
+
+The _printf function recreates printf() form stdio.
 .SH SYNOPSIS
-To use this function the #include "mainn.h" header is needed.
+.B #include "main.h"
+
+.B int _printf(const char \fI*format\fR,
+.B ...)
+
 .SH DESCRIPTION
-The _printf() function produces output according to a format which is described
-below. This function write its output to the stdout, the standard output stream.
-.SH USAGE
-To use _printf you have to use the following key characters preceeded by % symbol.
+Writes formatted output.
+
+.B Return Value
 .RS 3
-%c: To be used to print characters
-.RS 0
-%s: To be used to print strings
-.RS 0
-%d: To print integers of max and min size of an int type
-.RS 0
-%i: To print integers of max and min size of an int type
-.RS 0
-%b: To print a number in binary form
-.SH RETURN VALUES
-The _printf() function returns an integer representing the number of symbols
-printed not counting \\0 for the string.
+The function returns the number of characters printed (excluding the null byte), or -1, if error.
+.RE
+
+.SH NOTES
+The program doesn't account for flags, fields, precision, or length modifiers.
+
+.SH EXAMPLE
+.RS 3
+To print a sentence with conversion specifiers:
+
+.RE
+
+.RS 8
+#include "main.h"
+
+_printf("%s has %d studio albums.", "Kraftwerk", 10);
+.RE
+
+.RS 3
+Output : "Kraftwerk has 10 studio albums."
+.RE
+
 .SH SEE ALSO
-.I printf(3)
-.SH BUGS
-No known bugs.
+.B printf(3)
 .SH AUTHOR
-Gafar H. Salam && Elizabeth Alade
+Gafar H. Salam and Elizabeth Alade
