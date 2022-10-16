@@ -1,6 +1,4 @@
-c:\n");
-	printf("============\n");
-/* %i without p#include "main.h"
+#include "main.h"
 #include <stdio.h>
 /**
  * main - tests the _printf function
