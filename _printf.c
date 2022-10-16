@@ -1,37 +1,54 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _printf - Receives the main string and all the necessary parameters to
- * ining all the desired characters
- * Return: A totaprint a formated string
- * @format: A string contal count of the characters printed
+ * _printf - takes a string and args of each '%'
+ * and prints them
+ * @format: initial string containing % +
+ * char denoting type and number of args
+ * @...: variable list of arguments
+ *
+ * Return: number of characters printed.
  */
 int _printf(const char *format, ...)
 {
-	int printed_chars;
-	conver_t f_list[] = {
-		{"c", print_char},
-		{"s", print_string},
-		{"%", print_percent},
-		{"d", print_integer},
-		{"i", print_integer},
-		{"b", print_binary},
-		{"r", print_reversed},
-		{"R", rot13},
-		{"u", unsigned_integer},
-		{"o", print_octal},
-		{"x", print_hex},
-		{"X", print_heX},
-		{NULL, NULL}
+	int i, j;
+	int count = 0;
+	va_list lst;
+	interface ids[] = {
+		{'c', _print_char},
+		{'s', _print_string},
+		{'i', _print_int},
+		{'d', _print_int},
+		{'%', _print_mod},
+		{'\0', NULL}
 	};
-	va_list arg_list;
 
-	if (format == NULL)
-		return (-1);
+	va_start(lst, format);
+	for (i = 0; format[i]; i++)
+		if (format[i] == '%')
+		{
+			i++;
+			for (; format[i] != '\0'; i++)
+			{
+				for (j = 0; ids[j].id != '\0'; j++)
+					if (format[i] == ids[j].id)
+					{
+						count += ids[j].fn(lst);
+						break;
+					}
+				if (ids[j].id)
+					break;
+				else
+		{
+			write(1, &format[i], 1);
+			count += }
+			if (format[i] == '\0')
+				return (-1);
+		}
+	1;
+		}
 
-	va_start(arg_list, format);
-	/*Calling parser function*/
-	printed_chars = parser(format, f_list, arg_list);
-	va_end(arg_list);
-	return (printed_chars);
+	va_end(lst);
+	return (count);
 }
