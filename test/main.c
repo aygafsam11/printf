@@ -1,44 +1,54 @@
 #include "main.h"
 #include <stdio.h>
-#include <limits.h>
-
 /**
- * main - Entry point
+ * main - tests the _printf function
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
-    int len;
-    int len2;
-    unsigned int ui;
-    void *addr;
+	int code;
 
-    len = _printf("Let's try to printf a simple sentence.\n");
-    len2 = printf("Let's try to printf a simple sentence.\n");
-    ui = (unsigned int)INT_MAX + 1024;
-    addr = (void *)0x7ffe637541f0;
-    _printf("Length:[%d, %i]\n", len, len);
-    printf("Length:[%d, %i]\n", len2, len2);
-    _printf("Negative:[%d]\n", -762534);
-    printf("Negative:[%d]\n", -762534);
-    _printf("Unsigned:[%u]\n", ui);
-    printf("Unsigned:[%u]\n", ui);
-    _printf("Unsigned octal:[%o]\n", ui);
-    printf("Unsigned octal:[%o]\n", ui);
-    _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-    printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-    _printf("Character:[%c]\n", 'H');
-    printf("Character:[%c]\n", 'H');
-    _printf("String:[%s]\n", "I am a string !");
-    printf("String:[%s]\n", "I am a string !");
-    _printf("Address:[%p]\n", addr);
-    printf("Address:[%p]\n", addr);
-    len = _printf("Percent:[%%]\n");
-    len2 = printf("Percent:[%%]\n");
-    _printf("Len:[%d]\n", len);
-    printf("Len:[%d]\n", len2);
-    _printf("Unknown:[%r]\n");
-    printf("Unknown:[%r]\n");
-    return (0);
+	printf("Numeric:\n");
+	printf("============\n");
+/* %i without param */
+	code = printf("Std: %i.\n");
+	printf("Std Returns: %d\n", code);
+	code = _printf("Our: %i.\n");
+	printf("Our Returns: %d\n", code);
+
+	code = printf("Std: %i.\n", 0);
+	printf("Std Returns: %d\n", code);
+	code = _printf("Our: %i.\n", 0);
+	printf("Our Returns: %d\n", code);
+
+	code = printf("Std: %i.\n", 67);
+	printf("Std Returns: %d\n", code);
+	code = _printf("Our: %i.\n", 67);
+	printf("Our Returns: %d\n", code);
+
+	code = printf("Std: %i.\n", 127);
+	printf("Std Returns: %d\n", code);
+	code = _printf("Our: %i.\n", 127);
+	printf("Our Returns: %d\n", code);
+
+	code = printf("Std: %d.\n", 0 % 10);
+	printf("Std Returns: %d\n", code);
+	code = _printf("Our: %d.\n", 0 % 10);
+	printf("Our Returns: %d\n", code);
+
+	printf("\nCharacters:\n");
+	printf("============\n");
+
+	code = printf("Std: %%.\n");
+	printf("Std Returns: %d\n", code);
+	code = _printf("Our: %%.\n");
+	printf("Our Returns: %d\n", code);
+
+	code = printf("Std: Cu%cio.us\n", '7');
+	printf("Std Returns: %d\n", code);
+	code = _printf("Our: Cu%cio.us\n", '7');
+	printf("Our Returns: %d\n", code);
+
+	return (0);
 }
