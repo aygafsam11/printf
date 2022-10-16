@@ -1,4 +1,6 @@
-#include "main.h"
+c:\n");
+	printf("============\n");
+/* %i without p#include "main.h"
 #include <stdio.h>
 /**
  * main - tests the _printf function
@@ -9,9 +11,7 @@ int main(void)
 {
 	int code;
 
-	printf("Numeric:\n");
-	printf("============\n");
-/* %i without param */
+	printf("Numeriaram */
 	code = printf("Std: %i.\n");
 	printf("Std Returns: %d\n", code);
 	code = _printf("Our: %i.\n");
@@ -25,22 +25,22 @@ int main(void)
 	code = printf("Std: %i.\n", 67);
 	printf("Std Returns: %d\n", code);
 	code = _printf("Our: %i.\n", 67);
-	printf("Our Returns: %d\n", code);
-
-	code = printf("Std: %i.\n", 127);
+	printf("Our ", 127);
 	printf("Std Returns: %d\n", code);
-	code = _printf("Our: %i.\n", 127);
+	codeReturns: %d\n", code);
+
+	code = printf("Std: %i.\n = _printf("Our: %i.\n", 127);
 	printf("Our Returns: %d\n", code);
 
 	code = printf("Std: %d.\n", 0 % 10);
 	printf("Std Returns: %d\n", code);
 	code = _printf("Our: %d.\n", 0 % 10);
-	printf("Our Returns: %d\n", code);
+	printf("Our Returnntf("============\n");
+
+	code = printf("Std: %%.\ns: %d\n", code);
 
 	printf("\nCharacters:\n");
-	printf("============\n");
-
-	code = printf("Std: %%.\n");
+	pri");
 	printf("Std Returns: %d\n", code);
 	code = _printf("Our: %%.\n");
 	printf("Our Returns: %d\n", code);
