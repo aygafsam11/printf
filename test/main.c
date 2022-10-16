@@ -37,19 +37,15 @@ int main(void)
 	printf("Std Returns: %d\n", code);
 	code = _printf("Our: %d.\n", 0 % 10);
 	printf("Our Returns: %d\n", code);
-
 	printf("\nCharacters:\n");
 	printf("============\n");
-
 	code = printf("Std: %%.\n");
 	printf("Std Returns: %d\n", code);
 	code = _printf("Our: %%.\n");
 	printf("Our Returns: %d\n", code);
-
 	code = printf("Std: Cu%cio.us\n", '7');
 	printf("Std Returns: %d\n", code);
 	code = _printf("Our: Cu%cio.us\n", '7');
 	printf("Our Returns: %d\n", code);
-
 	return (0);
 }
