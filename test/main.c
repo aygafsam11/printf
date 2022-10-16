@@ -13,19 +13,19 @@ int main(void)
 	printf("Numeric:\n");
 	printf("============\n");
 /* %i without param */
-	cof("Our Returns: %d\n", code);
-
-	code = printf("Stdde = printf("Std: %i.\n");
+	code = printf("Std: %i.\n");
 	printf("Std Returns: %d\n", code);
 	code = _printf("Our: %i.\n");
-	print: %i.\n", 0);
+	printf("Std Returns: %d\n", code);
+
+	code = printf("Our: %i.\n", 0);
 	printf("Std Returns: %d\n", code);
 	code = _printf("Our: %i.\n", 0);
-	printf("Our Ret67);
-	printf("Std Returns: %d\n", code);
-	code = _urns: %d\n", code);
+	print("Our Returns: %d\n", code);
 
-	code = printf("Std: %i.\n", printf("Our: %i.\n", 67);
+	code = printf("Std: %i.\n", 67);
+	printf("Std Returns: %d\n", code);
+	code = _printf("Our: %i.\n", 67);
 	printf("Our Returns: %d\n", code);
 
 	code = printf("Std: %i.\n", 127);
@@ -43,11 +43,11 @@ int main(void)
 
 	code = printf("Std: %%.\n");
 	printf("Std Returns: %d\n", code);
-	code = _printf("Our:de = printf("Std: Cu%cio.us\n", '7');
-	printf("Std %%.\n");
+	code = _printf("Our: %%.\n");
 	printf("Our Returns: %d\n", code);
 
-	co Returns: %d\n", code);
+	code = printf("Std: Cu%cio.us\n", '7');
+	printf("Std Returns: %d\n", code);
 	code = _printf("Our: Cu%cio.us\n", '7');
 	printf("Our Returns: %d\n", code);
 
