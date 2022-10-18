@@ -5,3 +5,8 @@
 - Add print_rev function  
 - Add print_binary file  
 - Add main.h file  
+- Add test dir  
+- Add main.c file  
+- Add putchar file  
+- Add printf file  
+- Add functions and other files  
