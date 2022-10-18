@@ -1,2 +1,3 @@
 # 0x11. C - printf Team Project  
-## Project by Gafar H. Salam and Elizabeth Alade  
+## Project by Gafar H. Salam and Elizabeth Alade alias DBossladyTechgirl  
+## Collaboration on Team Project on Printf.  
