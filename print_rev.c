@@ -10,7 +10,7 @@ int print_rev(va_list r)
 {
 	char *st;
 	int i, j = 0;
-	
+
 	st = va_arg(r, char *);
 	if (st == NULL)
 		st = ")llun(";
