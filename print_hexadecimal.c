@@ -32,7 +32,7 @@ int print_hex(va_list arg)
 /**
  * print_HEX - prints a hexadecimal in upper case
  * @arg: list that contains hexadecimal to print
- * Return: number of digits printed
+ * Return: number of digit printed
  */
 
 int print_HEX(va_list arg)
