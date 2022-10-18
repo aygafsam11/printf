@@ -15,7 +15,7 @@ int print_char(va_list arg)
 
 /**
  * print_int - prints an integer.
- * @arg: argument
+ * @arg: argument and print
  * Return: 0
  */
 
