@@ -103,7 +103,7 @@ return (i);
 
 /**
  * print_unsigned - prints an unsigned int.
- * @arg: argument
+ * @arg: argument and parameters
  * Return: 0
  */
 
