@@ -4,7 +4,7 @@
 
 /**
  * print_unsignedToBinary - prints an integer.
- * @arg: argument
+ * @arg: arguments
  * Return: 0
  */
 int print_unsignedToBinary(va_list arg)
