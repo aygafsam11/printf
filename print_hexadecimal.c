@@ -3,7 +3,7 @@
 /**
  * print_hex_base - base function for printing hexadecimal numbers
  * @arg: argument list containing hexadecimal
- * @_case: a  in caps on lower, printing the hex number in caps in lower
+ * @_case: a  in caps on lowers, printing the hex number in caps in lower
  * Return: number of digits printed
  */
 
