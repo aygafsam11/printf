@@ -1,5 +1,6 @@
 # 0x11. C - printf Team Project  
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Project by Gafar H. Salam and Elizabeth Alade  
 =======
 Add Main.h file with function and struc  
@@ -104,3 +105,31 @@ alex@ubuntu:~/c/printf$
 - We strongly encourage you to work all together on a set of tests
 - If the task does not specify what to do with an edge case, do the same as printf
 >>>>>>> 50e364a45a507314a92df694292315233733a307
+=======
+## Project by Gafar H. Salam and Elizabeth Alade alias DBossladyTechgirl  
+## Collaboration on Team Project on Printf.  
+- Add README file  
+- Add print_rev function  
+- Add print_binary file  
+- Add main.h file  
+- Add test dir  
+- Add main.c file  
+- Add putchar file  
+- Add printf file  
+- Add functions and other files  
+`ConceptsConcepts`  
+### For this project, we expect you to look at these concepts:  
+
+- Group Projects
+- Pair Programming - How To
+- Flowcharts
+- Technical Writing  
+## Resources
+### Read or watch:
+
+- Secrets of printf
+- Group Projects concept page (Don’t forget to read this)
+- Flowcharts concept page
+### man or help:
+- printf (3)  
+>>>>>>> 13d7006e3bfd6c404af6b7ab6544023de16ea5ec
