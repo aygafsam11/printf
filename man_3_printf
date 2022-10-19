@@ -30,11 +30,15 @@ It is a character string, composed of zero or more directives, ordinary characte
 No known bugs
 .SS colphon
 .br
-This page was created in collaboration with ALX-Holberton, 20 minutes before the submission deadline.
+This page was created in collaboration with ALX, 2 days before the submission deadline.
 
 .SH AUTHORS
+<<<<<<< HEAD
 <<<<<<< HEAD
 .B Gafar H. Salam and Alade Elizabeth alais DBosslady
 =======
 .B Gafar H. Salam and Alade Elizabeth alais LizzyDbosstechgirl
 >>>>>>> 13d7006e3bfd6c404af6b7ab6544023de16ea5ec
+=======
+.B Gafar H. Salam and Elizabeth Alade
+>>>>>>> 766e9103e596f2e2b5258eef0cf6847b57e3241d

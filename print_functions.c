@@ -4,7 +4,7 @@
 /**
  * print_char - writes the character c to stdout
  * @arg: argument
- * @printed 
+ *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -15,7 +15,7 @@ int print_char(va_list arg)
 
 /**
  * print_int - prints an integer.
- * @arg: argument and print
+ * @arg: argument
  * Return: 0
  */
 
@@ -103,7 +103,7 @@ return (i);
 
 /**
  * print_unsigned - prints an unsigned int.
- * @arg: argument and parameters
+ * @arg: argument
  * Return: 0
  */
 
