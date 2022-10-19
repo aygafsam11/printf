@@ -4,7 +4,7 @@
 
 /**
  * print_unsignedToBinary - prints an integer.
- * @arg: argument
+ * @arg: arguments
  * Return: 0
  */
 int print_unsignedToBinary(va_list arg)
@@ -22,7 +22,7 @@ return (printed);
 
 /**
  * print_oct - prints number in octal base.
- * @arg: list containing octal number to be printed
+ * @arg: list containing octal number to be also printed
  * Return: number of octals printed
  */
 
@@ -64,7 +64,7 @@ int print_oct(va_list arg)
  * print_unsignedIntToHex - prints unsigned int to hexadecimal.
  * @num: number to print
  * @_case: letter `a` on the case to print it (upper or lower)
- * Return: number or char printed
+ * Return: number or char be printed
  */
 int print_unsignedIntToHex(unsigned int num, char _case)
 {

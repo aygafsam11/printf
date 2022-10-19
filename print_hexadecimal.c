@@ -3,7 +3,7 @@
 /**
  * print_hex_base - base function for printing hexadecimal numbers
  * @arg: argument list containing hexadecimal
- * @_case: a  in caps on lower, printing the hex number in caps in lower
+ * @_case: a  in caps on lowers, printing the hex number in caps in lower
  * Return: number of digits printed
  */
 
@@ -21,7 +21,7 @@ int print_hex_base(va_list arg, char _case)
 /**
  * print_hex - prints a hexadecimal in lower case
  * @arg: list that contains hexadecimal to print
- * Return: number of digits printed
+ * Return: number of digit printed
  */
 
 int print_hex(va_list arg)
@@ -32,7 +32,7 @@ int print_hex(va_list arg)
 /**
  * print_HEX - prints a hexadecimal in upper case
  * @arg: list that contains hexadecimal to print
- * Return: number of digits printed
+ * Return: number of digit printed
  */
 
 int print_HEX(va_list arg)
