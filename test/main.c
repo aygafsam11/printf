@@ -1,6 +1,6 @@
 #include <limits.h>
 #include <stdio.h>
-#include "main.h"
+#include "../main.h"
 
 /**
  * main - Entry point
@@ -49,5 +49,7 @@ int main(void)
 	printf("%u\n", UINT_MAX);
 	_printf("Could you print some non-prntable characters?\n%S\nThanks!\n", "Sure:\x1F\x7F\n");
 	_printf("%b\n", 1024);
+	len = _printf("%s%b\n", s, INT_MAX);
+	len2 = printf("%s%s\n", s, "1111111111111111111111111111111");
 	return (0);
 }
