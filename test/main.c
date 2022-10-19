@@ -49,7 +49,7 @@ int main(void)
 	printf("%u\n", UINT_MAX);
 	_printf("Could you print some non-prntable characters?\n%S\nThanks!\n", "Sure:\x1F\x7F\n");
 	_printf("%b\n", 1024);
-	len = _printf("%s%b\n", s, INT_MAX);
-	len2 = printf("%s%s\n", s, 'A');
+	len = _printf("%s%b\n", INT_MAX);
+
 	return (0);
 }

@@ -4,8 +4,8 @@
 /**
  * print_char - writes the character c to stdout
  * @arg: argument
- * @printed 
- * Return: On success 1.
+ * @printed
+ * * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 int print_char(va_list arg)
